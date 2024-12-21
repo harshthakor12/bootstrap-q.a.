@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    .main {
+      width: 50% !important;
+      margin: 0 auto !important;
+      background: url(image/bg.jpg.webp) center center / cover fixed !important;
+    }
+  </style>
+  <body>
+    <h1 class="text-md-center">
+      Create a User registration form Using Form Component.
+    </h1>
+    <div class="main d-flex justify-content-center">
+      <form action="/action_page.php" class="was-validated w-50 text-center">
+        <div class="d-flex justify-content-center">
+          <img class="w-75" src="image/menu.png" alt="" />
+        </div>
+        <h2 class="text-dark fw-bold">Hotel Registration</h2>
+        <div class="mb-3 mt-3">
+          <label for="uname" class="form-label text-light fw-bold"
+            >Username:</label
+          >
+          <input
+            type="text"
+            style="background-color: transparent"
+            class="form-control fw-bold"
+            id="uname"
+            placeholder="Enter username"
+            name="uname"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label text-light fw-bold"
+            >Password:</label
+          >
+          <input
+            style="background-color: transparent"
+            type="password"
+            class="form-control fw-bold"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-check mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="myCheck"
+            name="remember"
+            required
+          />
+          <label class="form-check-label" for="myCheck"
+            >I agree on blabla.</label
+          >
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
